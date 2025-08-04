@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>السيارات المستعملة</title>
+  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>السيارات المستعملة</h1>
+    <input type="text" id="searchInput" class="search-bar" placeholder="ابحث عن نوع أو موديل أو السعر...">
+    <a href="index.html" class="back-button"> رجوع للصفحة الرئيسية ⬅️</a>
+  </header>
+
+  <div class="section">
+    <h2>نشر سيارة مستعملة</h2>
+    <form id="carForm">
+      <input type="text" id="owner" placeholder="اسم المالك" required>
+      <input type="text" id="phone" placeholder="رقم الهاتف" required>
+      <input type="text" id="carType" placeholder="نوع العربية" required>
+      <input type="text" id="carModel" placeholder="موديل العربية" required>
+      <input type="text" id="price" placeholder="السعر بالجنيه" required>
+
+      <select id="payment" required>
+        <option value="">اختر طريقة الدفع</option>
+        <option value="كاش">كاش</option>
+        <option value="قسط">قسط</option>
+        <option value="كاش وقسط">كاش وقسط</option>
+      </select>
+
+      <button type="submit">نشر السيارة</button>
+    </form>
+  </div>
+
+  <div class="section" id="carsList">
+    <h2>السيارات المتاحة</h2>
+
+    <div class="car-card">
+      <img src="images/kia.jpg" alt="تويوتا كورولا" class="car-image">
+      <h3>تويوتا كورولا 2016</h3>
+      <p><strong>السعر:</strong> 330,000 جنيه</p>
+      <p><strong>الدفع:</strong> كاش</p>
+    </div>
+
+    <div class="car-card">
+      <img src="images/kia.jpg" alt="هيونداي إلنترا" class="car-image">
+      <h3>هيونداي إلنترا 2014</h3>
+      <p><strong>السعر:</strong> 310,000 جنيه</p>
+      <p><strong>الدفع:</strong> كاش وقسط</p>
+    </div>
+
+    <div class="car-card">
+      <img src="images/kia.jpg" alt="شيفروليه أوبترا" class="car-image">
+      <h3>شيفروليه أوبترا 2019</h3>
+      <p><strong>السعر:</strong> 270,000 جنيه</p>
+      <p><strong>الدفع:</strong> قسط</p>
+    </div>
+
+    <div class="car-card">
+      <img src="images/kia.jpg" alt="نيسان صني" class="car-image">
+      <h3>نيسان صني 2015</h3>
+      <p><strong>السعر:</strong> 250,000 جنيه</p>
+      <p><strong>الدفع:</strong> كاش</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025</p>
+    <p>تليفون أرضي: 0223456789</p>
+    <p>موبايل: 01012345678</p>
+    <p>واتساب: 01198765432</p>
+  </footer>
+
+  <script src="used-cars.js"></script>
+</body>
+</html>
