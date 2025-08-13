@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قطع الغيار</title>
+  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: center;">
+      <h1 style="margin: 0 0 0 16px;">قطع الغيار</h1>
+      <input type="text" class="search-bar" id="searchInput" placeholder="ابحث هنا..." />
+      <a href="index.html" class="back-button" style="margin-right: auto;">رجوع للصفحة الرئيسية ⬅️</a>
+    </div>
+        <!-- أيقونة الدفع -->
+      <div class="payment-icon" style="margin-top: 12px;">
+        <img id="payment-method-icon" src="images/visa.png" alt="Payment Method">
+      </div>
+  </header>
+
+  <!-- نافذة الدفع -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>إضافة طريقة دفع</h2>
+      <!-- رقم البطاقة -->
+      <input type="text" id="card-number" placeholder="أدخل رقم البطاقة" maxlength="19" dir="ltr">
+      <!-- الحقول الإضافية -->
+      <div id="extra-fields">
+        <div class="expiry-cvv-group">
+          <select id="expiry-month">
+            <option value="">شهر</option>
+          </select>
+          <select id="expiry-year">
+            <option value="">سنة</option>
+          </select>
+          <input type="text" id="cvv" placeholder="CVV" maxlength="3" dir="ltr">
+        </div>
+      </div>
+      <!-- كارت الفيزا المحفوظة يظهر هنا -->
+      <div id="visa-card-box"></div>
+      <!-- زر الحفظ -->
+      <button id="save-payment" class="save-btn">💾 حفظ</button>
+    </div>
+  </div>
+  </header>
+
+  <div class="section">
+
+    <div class="part-card">
+      <img src="images/car-radiator.jpeg" alt="فلتر هواء - كورولا 2016">
+      <h2>فلتر هواء - كورولا 2016</h2>
+      <p><strong>السعر:</strong> 350 جنيه</p>
+      <p><strong>متوفر في:</strong> معرض الأهرام، ورشة النور</p>
+    </div>
+
+    <div class="part-card">
+      <img src="images/car-radiator.jpeg" alt="ردياتير - إلنترا 2014">
+      <h2>ردياتير - إلنترا 2014</h2>
+      <p><strong>السعر:</strong> 950 جنيه</p>
+      <p><strong>متوفر في:</strong> معرض الطارق، مركز الخليج</p>
+    </div>
+
+    <div class="part-card">
+      <img src="images/car-radiator.jpeg" alt="مساعد خلفي - أوبترا 2019">
+      <h2>مساعد خلفي - أوبترا 2019</h2>
+      <p><strong>السعر:</strong> 670 جنيه</p>
+      <p><strong>متوفر في:</strong> معرض الأبيض، ورشة التوحيد</p>
+    </div>
+
+    <div class="part-card">
+      <img src="images/car-radiator.jpeg" alt="بطارية - نيسان صني 2015">
+      <h2>بطارية - نيسان صني 2015</h2>
+      <p><strong>السعر:</strong> 1250 جنيه</p>
+      <p><strong>متوفر في:</strong> معرض النخيل أوتو، ورشة المهندس</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025</p>
+    <p>تليفون أرضي: 0223456789</p>
+    <p>موبايل: 01012345678</p>
+    <p>واتساب: 01198765432</p>
+  </footer>
+
+  <!-- ربط ملف الجافاسكربت -->
+  <script src="spare-parts.js"></script>
+  <script src="master.js"></script>
+</body>
+</html>

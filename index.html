@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موقع بيع سيارات</title>
+  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <input type="text" class="search-bar" placeholder="ابحث هنا..." />
+
+    <!-- أيقونة الدفع -->
+    <div class="payment-icon">
+      <img id="payment-method-icon" src="images/visa.png" alt="Payment Method">
+    </div>
+  </header>
+
+  <!-- نافذة الدفع -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>إضافة طريقة دفع</h2>
+
+      <!-- رقم البطاقة -->
+      <input type="text" id="card-number" placeholder="أدخل رقم البطاقة" maxlength="19" dir="ltr">
+
+      <!-- الحقول الإضافية -->
+      <div id="extra-fields">
+        <div class="expiry-cvv-group">
+          <select id="expiry-month">
+            <option value="">شهر</option>
+          </select>
+
+          <select id="expiry-year">
+            <option value="">سنة</option>
+          </select>
+
+          <input type="text" id="cvv" placeholder="CVV" maxlength="3" dir="ltr">
+        </div>
+      </div>
+
+      <!-- كارت الفيزا المحفوظة يظهر هنا -->
+      <div id="visa-card-box"></div>
+
+      <!-- زر الحفظ -->
+      <button id="save-payment" class="save-btn">💾 حفظ</button>
+    </div>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="container">
+
+    <!-- قسم المعارض -->
+    <div class="section">
+      <h2>المعارض</h2>
+      <div class="items">
+        <div class="item"><a href="#"><img src="images/car-showroom.jpg" alt=""><p>معرض الأهرام</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-showroom.jpg" alt=""><p>معرض الطارق</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-showroom.jpg" alt=""><p>معرض الأبيض</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-showroom.jpg" alt=""><p>معرض النخيل أوتو</p></a></div>
+      </div>
+      <a href="showrooms.html" class="shop-link">تصفح المعارض</a>
+    </div>
+
+    <!-- قسم السيارات المستعملة -->
+    <div class="section">
+      <h2>السيارات المستعملة</h2>
+      <div class="items">
+        <div class="item"><a href="#"><img src="images/kia.jpg" alt=""><p>تويوتا كورولا 2016</p></a></div>
+        <div class="item"><a href="#"><img src="images/kia.jpg" alt=""><p>هيونداي إلنترا 2014</p></a></div>
+        <div class="item"><a href="#"><img src="images/kia.jpg" alt=""><p>شيفروليه أوبترا 2019</p></a></div>
+        <div class="item"><a href="#"><img src="images/kia.jpg" alt=""><p>نيسان صني 2015</p></a></div>
+      </div>
+      <a href="used-cars.html" class="shop-link">تصفح السيارات</a>
+    </div>
+
+    <!-- قسم الورش -->
+    <div class="section">
+      <h2>ورش الصيانة</h2>
+      <div class="items">
+        <div class="item"><a href="#"><img src="images/car-workshop.jpg" alt=""><p>ورشة النور</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-workshop.jpg" alt=""><p>ورشة المهندس</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-workshop.jpg" alt=""><p>مركز الخليج</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-workshop.jpg" alt=""><p>ورشة التوحيد</p></a></div>
+      </div>
+      <a href="workshops.html" class="shop-link">تصفح الورش</a>
+    </div>
+
+    <!-- قسم قطع الغيار -->
+    <div class="section">
+      <h2>قطع الغيار</h2>
+      <div class="items">
+        <div class="item"><a href="#"><img src="images/car-radiator.jpeg" alt=""><p>فلتر هواء - كورولا 2016</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-radiator.jpeg" alt=""><p>ردياتير - إلنترا 2014</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-radiator.jpeg" alt=""><p>مساعد خلفي - أوبترا 2019</p></a></div>
+        <div class="item"><a href="#"><img src="images/car-radiator.jpeg" alt=""><p>بطارية - نيسان صني 2015</p></a></div>
+      </div>
+      <a href="spare-parts.html" class="shop-link">تصفح القطع</a>
+    </div>
+
+  </div>
+
+  <!-- الفوتر -->
+  <footer>
+    <div class="footer-content">
+      <p>جميع الحقوق محفوظة © 2025</p>
+      <p>تليفون أرضي: 0223456789</p>
+      <p>موبايل: 01012345678</p>
+      <p>واتساب: 01198765432</p>
+    </div>
+  </footer>
+
+  <!-- الملفات -->
+  <script src="master.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

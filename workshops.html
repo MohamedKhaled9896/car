@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ورش الصيانة</title>
+  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: center;">
+    <h1>ورش الصيانة</h1>
+    <input type="text" class="search-bar" placeholder="ابحث هنا..." />
+    <a href="index.html" class="back-button" style="margin-right: auto;">رجوع للصفحة الرئيسية ⬅️</a>
+    </div>
+        <!-- أيقونة الدفع -->
+      <div class="payment-icon" style="margin-top: 12px;">
+        <img id="payment-method-icon" src="images/visa.png" alt="Payment Method">
+      </div>
+  </header>
+
+  <!-- نافذة الدفع -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>إضافة طريقة دفع</h2>
+      <!-- رقم البطاقة -->
+      <input type="text" id="card-number" placeholder="أدخل رقم البطاقة" maxlength="19" dir="ltr">
+      <!-- الحقول الإضافية -->
+      <div id="extra-fields">
+        <div class="expiry-cvv-group">
+          <select id="expiry-month">
+            <option value="">شهر</option>
+          </select>
+          <select id="expiry-year">
+            <option value="">سنة</option>
+          </select>
+          <input type="text" id="cvv" placeholder="CVV" maxlength="3" dir="ltr">
+        </div>
+      </div>
+      <!-- كارت الفيزا المحفوظة يظهر هنا -->
+      <div id="visa-card-box"></div>
+      <!-- زر الحفظ -->
+      <button id="save-payment" class="save-btn">💾 حفظ</button>
+    </div>
+  </div>
+  </header>
+
+  <div class="section">
+    <div class="workshop-card">
+      <img src="images/car-workshop.jpg" alt="ورشة النور">
+      <h2>ورشة النور</h2>
+      <p><strong>العنوان:</strong> شارع النصر، مدينة نصر، القاهرة</p>
+      <p><strong>موبايل:</strong> 01001234567</p>
+      <p><strong>أرضي:</strong> 0223456789</p>
+      <p><strong>واتساب:</strong> 01001234567</p>
+      <p><strong>مواعيد العمل:</strong> 9 صباحًا - 6 مساءً</p>
+    </div>
+
+    <div class="workshop-card">
+      <img src="images/car-workshop.jpg" alt="ورشة المهندس">
+      <h2>ورشة المهندس</h2>
+      <p><strong>العنوان:</strong> شارع الثورة، مصر الجديدة</p>
+      <p><strong>موبايل:</strong> 01002345678</p>
+      <p><strong>أرضي:</strong> 0223567890</p>
+      <p><strong>واتساب:</strong> 01002345678</p>
+      <p><strong>مواعيد العمل:</strong> 10 صباحًا - 5 مساءً</p>
+    </div>
+
+    <div class="workshop-card">
+      <img src="images/car-workshop.jpg" alt="مركز الخليج">
+      <h2>مركز الخليج</h2>
+      <p><strong>العنوان:</strong> شارع الخليج، المعادي، القاهرة</p>
+      <p><strong>موبايل:</strong> 01003456789</p>
+      <p><strong>أرضي:</strong> 0223678901</p>
+      <p><strong>واتساب:</strong> 01003456789</p>
+      <p><strong>مواعيد العمل:</strong> 8 صباحًا - 4 مساءً</p>
+    </div>
+
+    <div class="workshop-card">
+      <img src="images/car-workshop.jpg" alt="ورشة التوحيد">
+      <h2>ورشة التوحيد</h2>
+      <p><strong>العنوان:</strong> شارع فيصل، الجيزة</p>
+      <p><strong>موبايل:</strong> 01004567890</p>
+      <p><strong>أرضي:</strong> 0223789012</p>
+      <p><strong>واتساب:</strong> 01004567890</p>
+      <p><strong>مواعيد العمل:</strong> 11 صباحًا - 7 مساءً</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025</p>
+    <p>تليفون أرضي: 0223456789</p>
+    <p>موبايل: 01012345678</p>
+    <p>واتساب: 01198765432</p>
+  </footer>
+
+  <script src="workshops.js"></script>
+  <script src="master.js"></script>
+</body>
+</html>

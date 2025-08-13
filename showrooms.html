@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تفاصيل المعارض</title>
+  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: center;">
+      <h1 style="margin: 0 0 0 16px;">تفاصيل المعارض</h1>
+      <input type="text" class="search-bar" placeholder="ابحث هنا..." />
+      <a href="index.html" class="back-button" style="margin-right: auto;">رجوع للصفحة الرئيسية ⬅️</a>
+    </div>
+        <!-- أيقونة الدفع -->
+      <div class="payment-icon" style="margin-top: 12px;">
+        <img id="payment-method-icon" src="images/visa.png" alt="Payment Method">
+      </div>
+  </header>
+
+  <!-- نافذة الدفع -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>إضافة طريقة دفع</h2>
+      <!-- رقم البطاقة -->
+      <input type="text" id="card-number" placeholder="أدخل رقم البطاقة" maxlength="19" dir="ltr">
+      <!-- الحقول الإضافية -->
+      <div id="extra-fields">
+        <div class="expiry-cvv-group">
+          <select id="expiry-month">
+            <option value="">شهر</option>
+          </select>
+          <select id="expiry-year">
+            <option value="">سنة</option>
+          </select>
+          <input type="text" id="cvv" placeholder="CVV" maxlength="3" dir="ltr">
+        </div>
+      </div>
+      <!-- كارت الفيزا المحفوظة يظهر هنا -->
+      <div id="visa-card-box"></div>
+      <!-- زر الحفظ -->
+      <button id="save-payment" class="save-btn">💾 حفظ</button>
+    </div>
+  </div>
+
+  <main class="showroom-container" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; padding: 32px 0;">
+    <div class="showroom-card">
+      <img src="images/car-showroom.jpg" alt="معرض الأهرام" />
+      <h2>معرض الأهرام</h2>
+      <p><strong>العنوان:</strong> مدينة نصر، شارع الطيران</p>
+      <p><strong>هاتف:</strong> 02-12345678</p>
+      <p><strong>موبايل:</strong> 01001234567</p>
+      <p><strong>واتساب:</strong> 01001234567</p>
+      <p><strong>مواعيد العمل:</strong> يوميًا من 9 ص حتى 9 م</p>
+      <a href="car-list/cl1.html" class="back-button">عرض السيارات المتاحة </a>
+    </div>
+
+    <div class="showroom-card">
+      <img src="images/car-showroom.jpg" alt="معرض الطارق" />
+      <h2>معرض الطارق</h2>
+      <p><strong>العنوان:</strong> طريق مصر الجديدة، أمام المطار</p>
+      <p><strong>هاتف:</strong> 02-87654321</p>
+      <p><strong>موبايل:</strong> 01009876543</p>
+      <p><strong>واتساب:</strong> 01009876543</p>
+      <p><strong>مواعيد العمل:</strong> من 10 ص إلى 8 م (عدا الجمعة)</p>
+      <a href="car-list/cl2.html" class="back-button">عرض السيارات المتاحة </a>
+    </div>
+
+    <div class="showroom-card">
+      <img src="images/car-showroom.jpg" alt="معرض الأبيض" />
+      <h2>معرض الأبيض</h2>
+      <p><strong>العنوان:</strong> الجيزة، شارع السودان</p>
+      <p><strong>هاتف:</strong> 02-23456789</p>
+      <p><strong>موبايل:</strong> 01002223344</p>
+      <p><strong>واتساب:</strong> 01002223344</p>
+      <p><strong>مواعيد العمل:</strong> يوميًا من 9 ص إلى 6 م</p>
+      <a href="car-list/cl3.html" class="back-button">عرض السيارات المتاحة </a>
+    </div>
+
+    <div class="showroom-card">
+      <img src="images/car-showroom.jpg" alt="معرض النخيل أوتو">
+      <h2>معرض النخيل أوتو</h2>
+      <p><strong>العنوان:</strong> 6 أكتوبر، الحي الرابع</p>
+      <p><strong>هاتف:</strong> 02-99887766</p>
+      <p><strong>موبايل:</strong> 01005556677</p>
+      <p><strong>واتساب:</strong> 01005556677</p>
+      <p><strong>مواعيد العمل:</strong> من 11 ص إلى 7 م</p>
+      <a href="car-list/cl4.html" class="back-button">عرض السيارات المتاحة </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content" style="text-align:center;">
+      <p>جميع الحقوق محفوظة © 2025</p>
+      <p>تليفون أرضي: 0223456789</p>
+      <p>موبايل: 01012345678</p>
+      <p>واتساب: 01198765432</p>
+    </div>
+  </footer>
+
+  <script src="showrooms.js"></script>
+  <script src="master.js"></script>
+</body>
+</html>
